@@ -21,9 +21,10 @@ while True:
     if number == 'done':
         break
     try:
-        total = total + float(number)
+        number = float(number)
+        total = total + number
         count = count + 1
-        if largest is None or number > largest :
+        if largest is None or number > largest:
             largest = number
         if  smallest is None or number < smallest:
             smallest = number
