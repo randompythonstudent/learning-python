@@ -7,6 +7,6 @@ Created on Tue Jul 19 17:15:09 2022
 
 fname = input('Enter file name: ')
 fhand = open(fname)
-inp = fhand.read().upper()
-
-print(inp)
+for line in fhand:
+    line = line.rstrip().upper()
+    print(line)
