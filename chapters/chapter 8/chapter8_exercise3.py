@@ -1,8 +1,13 @@
+import sys
 numlist = list()
 while (True):
     inp = input('Enter a number: ')
     if inp == 'done': break
-    value = float(inp)
+    try:
+        value = float(inp)
+    except:
+        print('Please enter a number')
+        sys.exit()
     numlist.append(value)
     
 average = sum(numlist) / len(numlist)

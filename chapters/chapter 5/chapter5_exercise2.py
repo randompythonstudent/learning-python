@@ -28,7 +28,9 @@ while True:
             largest = number
         if  smallest is None or number < smallest:
             smallest = number
+          
     except:
         print("Please Enter a Numerical Value")
 
 print("Total: " ,total, "Count: " , count, "Largest: " , largest, "Smallest: ", smallest)
+print(max(number))
